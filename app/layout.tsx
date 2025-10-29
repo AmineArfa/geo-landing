@@ -1,7 +1,11 @@
 import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
-import CTABar from '@/components/CTABar'
+import dynamic from 'next/dynamic'
+
+const CTABar = dynamic(() => import('@/components/CTABar'), {
+  ssr: false,
+})
 
 const inter = Inter({
   subsets: ['latin'],

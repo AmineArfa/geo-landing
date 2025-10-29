@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion'
 import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
-import ScoreDial from './ScoreDial'
+import ScoreDial from '@/components/ScoreDial'
 import { seedFromDomain, type SeedData } from '@/lib/seed'
 import { enter, enterReduced, spring } from '@/lib/motion'
 
